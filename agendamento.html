@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="caixa logo"><img src="imagens/logotipo.png" alt="Logo-Barbearia"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>AGENDAMENTO - BARBEARIA</h1>
+
+            <form id="agendamentoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Serviço:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="combo">Corte + Barba - R$ 45</option>
+                        <option value="corte">Corte de Cabelo - R$ 35</option>
+                        <option value="barba">Barba - R$ 15</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Selecione a Data:</label>
+                    <div id="calendar" class="calendar"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Selecione o Horário:</label>
+                    <div id="timeSlots" class="time-slots"></div>
+                </div>
+
+                <button type="submit">Confirmar Agendamento</button>
+            </form>
+
+            <div id="confirmation" class="confirmation"></div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Sandro Lima ADS. Todos os direitos reservados.</p>
+        <p>Desenvolvido com dedicação por um estudante de tecnologia.</p>
+
+        <div class="icones-sociais">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/seuusuario" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:helioguerra01@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script type="module" src="agendamento.js"></script>
+</body>
+</html>
